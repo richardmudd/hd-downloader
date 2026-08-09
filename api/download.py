@@ -32,6 +32,8 @@ class handler(BaseHTTPRequestHandler):
                 # Run hdporncomics downloader
                 result = subprocess.run(
                     [
+                        "python",
+                        "-m",
                         "hdporncomics",
                         "--directory",
                         tmp,
